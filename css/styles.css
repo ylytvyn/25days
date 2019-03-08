@@ -1,0 +1,95 @@
+:root {
+	--title-color: #171717;
+	--title: 'Playfair Display', serif;
+	--font: 'Lato', sans-serif;
+	--orange: #eaa258;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+	font: 300 18px/34px var(--font);
+	color: rgba(23, 23, 23, .7);
+
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+.willow-main{
+	max-width: 1400px;
+	box-shadow: 4px 0 68px 0 rgba(0, 0, 0, .1);
+	margin: 130px auto;
+	padding: 120px 8.5%;
+}
+
+.willow-main h1{
+	font: 42px var(--title);
+	color: var(--title-color);
+	margin-bottom: 25px;
+}
+
+.willow-main p:first-of-type::first-letter{
+	font: 110px/90px var(--title);
+	color: var(--title-color);
+	float: left;
+	margin-right: 20px;
+}
+
+.willow-main p{
+	letter-spacing: -0.05px;
+	margin-bottom: 40px;
+}
+
+.willow-main p:last-of-type{
+	margin-bottom: 20px;
+}
+
+.willow-qoute::before{
+	content: "“";
+	font-size: 60px;
+	margin: 0 20px 0 10px;
+}
+
+.willow-qoute{
+	font-size: 24px;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+.willow-btn{
+	padding: 20px 75px;
+	color: var(--orange);
+	border: 2px solid;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.willow-btn:hover{
+	background: var(--orange);
+	border-color: var(--orange);
+	color: #fff;
+}
